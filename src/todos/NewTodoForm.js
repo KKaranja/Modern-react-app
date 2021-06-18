@@ -19,7 +19,7 @@ const NewTodoForm = ({ todos, onCreatePressed }) => {
                 todos.some(todo => todo.text === inputValue);
                 if(!isDuplicateText){
                     onCreatePressed(inputValue);
-                    setInputValue= ('');
+                    setInputValue('');
                 }
                 
             }}
